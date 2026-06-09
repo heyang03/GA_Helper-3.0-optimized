@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA 填充助手</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 320px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f7fb;
+            color: #202124;
+            padding: 16px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            padding: 12px;
+            background: #ffffff;
+            border: 1px solid #dfe5ef;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(60,64,67,0.08);
+        }
+        .logo-icon {
+            background: linear-gradient(135deg, #1A73E8 0%, #4285F4 100%);
+            color: white;
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 8px 20px rgba(26,115,232,0.26);
+        }
+        .logo-text {
+            font-size: 17px;
+            font-weight: 750;
+            color: #1a1a1a;
+        }
+        .version {
+            font-size: 11px;
+            color: #5f6368;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0 2px;
+        }
+        .version span {
+            background: #e8f0fe;
+            color: #1967d2;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+        .info-card {
+            background: white;
+            border: 1px solid #dfe5ef;
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 10px rgba(60,64,67,0.08);
+        }
+        .info-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #3c4043;
+        }
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #2f3337;
+        }
+        .feature-icon {
+            font-size: 15px;
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            background: #f1f5fb;
+            text-align: center;
+            flex-shrink: 0;
+            line-height: 22px;
+        }
+        .footer {
+            margin-top: 8px;
+            padding: 10px 12px;
+            font-size: 11px;
+            color: #68727d;
+            text-align: center;
+            background: #ffffff;
+            border: 1px dashed #cfd8e6;
+            border-radius: 8px;
+        }
+        .status {
+            font-size: 12px;
+            color: #1e8e3e;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            font-weight: 700;
+            padding-top: 10px;
+            border-top: 1px solid #eef2f7;
+        }
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            background: #1e8e3e;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 0 4px rgba(30,142,62,0.12);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo-icon">⚡</div>
+        <div class="logo-text">GA 模板精准填充</div>
+    </div>
+    <div class="version">
+        当前版本 <span>3.0</span> · 作者 小何
+    </div>
+
+    <div class="info-card">
+        <div class="feature-list">
+            <div class="feature-item">
+                <span class="feature-icon">✅</span>
+                <span>仅限 <b>ads.google.com</b> 页面自动启用</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">📌</span>
+                <span>页面右侧出现 <b>悬浮按钮</b>，点击打开控制面板</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🧩</span>
+                <span>一键拆分完整模板，手动填充到广告平台各模块</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🔗</span>
+                <span>支持标题、描述、站内链接、宣传信息、结构化摘要</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🎯</span>
+                <span>自动字符数检查、智能展开/折叠、拖拽悬浮按钮</span>
+            </div>
+        </div>
+        <div class="status">
+            <span class="status-dot"></span> 已准备就绪
+        </div>
+    </div>
+
+    <div class="footer">
+        💡 提示：按 <b>Alt+X</b> 可隐藏/显示悬浮按钮
+    </div>
+</body>
+</html>
