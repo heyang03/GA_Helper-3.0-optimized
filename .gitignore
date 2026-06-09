@@ -1,0 +1,14 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Dependency/build output
+node_modules/
+dist/
+build/
