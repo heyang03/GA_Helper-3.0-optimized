@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Google Ads 模板精准填充版",
+    "version": "3.0",
+    "description": "完整模板输入框整合到面板顶层，一键提取仅拆分到脚本子模块，手动点击填充到Google Ads",
+    "author": "小何",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://ads.google.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "permissions": [],
+    "host_permissions": ["*://ads.google.com/*"]
+  }
